@@ -1,16 +1,40 @@
 <html>
-    <head>
-        <title>
-            calculater
-        </title>
-    </head>
-    <body>
-       <div class="container">
-        <h1>calculator</h1>
-        <div class="row"></div>
-        <input type="text" name="result" class="result"
-        id="result" value="" placeholder="result" readonly />
-        <input type="button" value="+" onclick="setScreenValue('+')"/>
-       </div> 
-    </body>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Calculator</h1>
+        <input type="text" name="result" class="result" id="result" placeholder="Result" readonly />
+
+        <div class="buttons">
+            <button onclick="setScreenValue('7')">7</button>
+            <button onclick="setScreenValue('8')">8</button>
+            <button onclick="setScreenValue('9')">9</button>
+            <button onclick="setScreenValue('/')">÷</button>
+
+            <button onclick="setScreenValue('4')">4</button>
+            <button onclick="setScreenValue('5')">5</button>
+            <button onclick="setScreenValue('6')">6</button>
+            <button onclick="setScreenValue('*')">×</button>
+
+            <button onclick="setScreenValue('1')">1</button>
+            <button onclick="setScreenValue('2')">2</button>
+            <button onclick="setScreenValue('3')">3</button>
+            <button onclick="setScreenValue('-')">−</button>
+
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="setScreenValue('0')">0</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="setScreenValue('+')">+</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
